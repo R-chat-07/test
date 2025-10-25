@@ -34,3 +34,9 @@ html {
     width:10%;
     height: 35px;
 }
+
+.update-info {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
