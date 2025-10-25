@@ -6,28 +6,65 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <h4>画像アップ・プレビュー</h4>
-        <input type="file" accept='image/*' onchange="preview(this, 'previewImage');">
-        <br>
-        <img class="preview" id="previewImage">
+    
+    <script src="./script.js">
+    </script>
+    
+    <div class="main">
+        <div class="input">
+            <h2>画像アップ・プレビュー</h2>
+            <input type="file" accept='image/*' onchange="preview(this, 'previewImage');">
+        </div>
+        <div class="output">
+            <img class="preview" id="previewImage" width="300">
+        </div>
     </div>
     
-    <div>
-        <h4>動画アップ・プレビュー</h4>
-  　    <input type="file" accept='video/*' onchange="preview(this, 'previewVideo');">
-        <br> 
-        <video class="preview" id="previewVideo" controls="controls" width="1000"></video> 
+    <div class="main">
+        <div class="input">
+            <h2>動画アップ・プレビュー</h2>
+  　        <input type="file" accept='video/*' onchange="preview(this, 'previewVideo');">
+        </div>
+        <div class="output">
+            <video class="preview" id="previewVideo" controls="controls" width="500"></video> 
+        </div>
     </div>
     
-    <div>
-        <h4>音声アップ・プレビュー</h4>
-        <input type="file" accept='audio/*' onchange="preview(this, 'previewAudio');">
-        <br>
-        <audio class="preview" id="previewAudio" controls="controls"></audio>
+    <div class="main">
+        <div class="input">
+            <h2>音声アップ・プレビュー</h2>
+            <input type="file" accept='audio/*' onchange="preview(this, 'previewAudio');">
+        </div>
+        <div class="output">
+            <audio class="preview" id="previewAudio" controls="controls"></audio>
+        </div>
+    </div>
+    
+    <div class="main">
+        <h2>YouTube動画再生</h2>
+        <div class="youtube-input">
+            <input type="text" id="url" value="TbakFPc4ZTw">
+            <button onclick="loadVideo(document.getElementById('url').value)">動画1</button>
+        </div>
+    
+        <div class="youtube-input">
+            <input type="text" id="url2" value="TbakFPc4ZTw">
+            <button onclick="loadVideo2(document.getElementById('url2').value)">動画2</button> 
+        </div>
+        
+        <div class="youtube-output">
+            <h3>・動画1</h3>
+            <div id="videoContainer"></div>
+        </div>
+        <div class="youtube-output">
+            <h3>・動画2</h3>
+            <div id="videoContainer2"></div>
+        </div>
+        
     </div>
 
     <script src="./script.js"></script>
     
 </body>
 </html>
+
