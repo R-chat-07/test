@@ -1,19 +1,20 @@
 html {
-    background-color: #FFD700;
+    background-color: #E6E6FA;
 }
 
 .main {
-    background-color: #E0FFFF;
+    background-color: #FFF8DC;
     padding: 30px;
     margin: 10px;
     border-radius: 20px;
 }
 
 .input {
+    margin: 10px;
 }
 
 .output {
-    margin: 10px;
+    margin: 20px;
 }
 
 .youtube-input {
@@ -22,4 +23,14 @@ html {
 
 .youtube-output {
     margin: 25px;
+}
+
+.url-text {
+    width: 85%;
+    height: 30px;
+}
+
+.reload-button {
+    width:10%;
+    height: 35px;
 }
