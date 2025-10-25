@@ -16,7 +16,7 @@
             <input type="file" accept='image/*' onchange="preview(this, 'previewImage');">
         </div>
         <div class="output">
-            <img class="preview" id="previewImage" width="300">
+            <img class="preview" id="previewImage" width="100%">
         </div>
     </div>
     
@@ -26,7 +26,7 @@
   　        <input type="file" accept='video/*' onchange="preview(this, 'previewVideo');">
         </div>
         <div class="output">
-            <video class="preview" id="previewVideo" controls="controls" width="500"></video> 
+            <video class="preview" id="previewVideo" controls="controls" width="100%"></video> 
         </div>
     </div>
     
@@ -36,20 +36,20 @@
             <input type="file" accept='audio/*' onchange="preview(this, 'previewAudio');">
         </div>
         <div class="output">
-            <audio class="preview" id="previewAudio" controls="controls"></audio>
+            <audio class="preview" id="previewAudio" controls="controls" width="100%"></audio>
         </div>
     </div>
     
     <div class="main">
-        <h2>YouTube動画再生</h2>
+        <h2>YouTube動画再生(同時再生可)</h2>
         <div class="youtube-input">
-            <input type="text" id="url">
-            <button onclick="loadVideo(document.getElementById('url').value)">動画1</button>
+            <input type="text" class="url-text" id="url" value="TbakFPc4ZTw">
+            <button class="reload-button" onclick="loadVideo(document.getElementById('url').value)">動画1</button>
         </div>
     
         <div class="youtube-input">
-            <input type="text" id="url2">
-            <button onclick="loadVideo2(document.getElementById('url2').value)">動画2</button> 
+            <input type="text" class="url-text" id="url2" value="TbakFPc4ZTw">
+            <button class="reload-button" onclick="loadVideo2(document.getElementById('url2').value)">動画2</button> 
         </div>
         
         <div class="youtube-output">
@@ -67,4 +67,3 @@
     
 </body>
 </html>
-
