@@ -6,11 +6,28 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
-  <video controls width="700">
-  <source src="./01.mp4" type="video/webm">
-　</video>
-  
-  <script src="./script.js"></script>
+    <div>
+        <h4>画像アップ・プレビュー</h4>
+        <input type="file" accept='image/*' onchange="preview(this, 'previewImage');">
+        <br>
+        <img class="preview" id="previewImage">
+    </div>
+    
+    <div>
+        <h4>動画アップ・プレビュー</h4>
+  　    <input type="file" accept='video/*' onchange="preview(this, 'previewVideo');">
+        <br> 
+        <video class="preview" id="previewVideo" controls="controls" width="1000"></video> 
+    </div>
+    
+    <div>
+        <h4>音声アップ・プレビュー</h4>
+        <input type="file" accept='audio/*' onchange="preview(this, 'previewAudio');">
+        <br>
+        <audio class="preview" id="previewAudio" controls="controls"></audio>
+    </div>
+
+    <script src="./script.js"></script>
+    
 </body>
 </html>
