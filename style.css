@@ -2,9 +2,24 @@ html {
     background-color: #FFD700;
 }
 
-div {
+.main {
     background-color: #E0FFFF;
     padding: 30px;
     margin: 10px;
-    border-radius: 30px;
+    border-radius: 20px;
+}
+
+.input {
+}
+
+.output {
+    margin: 10px;
+}
+
+.youtube-input {
+    margin: 10px;
+}
+
+.youtube-output {
+    margin: 25px;
 }
